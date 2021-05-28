@@ -36,9 +36,7 @@ const PostPage = ({ post }) =>
       <h1>
         {post.title}
       </h1>
-      <p>
-        {post.body}
-      </p>
+      <div className='text-container' dangerouslySetInnerHTML={{ __html: post.article }} />
     </Wrapper>
   </Layout>
 
